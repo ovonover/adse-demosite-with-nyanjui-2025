@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0"/>
+    <title>ADSE2409 Demosite - Images </title>
+    <!-- Link to the main.css stylesheet -->
+    <link rel="stylesheet" href="../../CSS/main.css"/>
+  </head>
+  <body>
+    <header>
+      <!-- TODO: Add the site's navigation bar here -->
+    </header>
+    <!-- Add a video element to hold our background video -->
+    <video id="video_bkgd"></video>
+    <div id="container">
+      <h1 class="page-heading">CSS Transformations</h1>
+      <p>An image is a graphic or picture. Images are what give life to your webpage.
+        Below are some images of a fictitious desert parlour
+      </p>
+      <h3 class="section-heading">Cakes</h3>
+      <div class="image-container">
+        <figure>
+            <img src="../images/cakes/choc_honeycomb_cake.jpg" alt="Chocolate Honeycomb Cake" loading="lazy"/>
+            <figcaption>
+                <p> Description of the Chocolate Honeycomb Cake</p><p class="price">2000</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/cakes/chocolate-raspberry-mousse-cake.jpg" alt="Chocolate Raspberry Mousse Cake" loading="lazy"/>
+            <figcaption>
+                <p> Description of the Chocolate Raspberry Mousse Cake</p><p class="price">1500</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/cakes/mint_party_cake.jpg" alt="Mint Party Cake" loading="lazy"/>
+            <figcaption>
+                <p> Description of the Mint Party Cake</p><p class="price">4500</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/cakes/vanilla_with_strawberry_cake.jpg" alt="Vanilla with Strawberry Cake" loading="lazy"/>
+            <figcaption>
+                <p> Description of the Vanilla with Strawberry Cake</p><p class="price">3500</p>
+            </figcaption>
+        </figure>
+      </div>
+        <footer class="page-footer">
+          ADSE 2409 Copyright &copy; 2024 - <span id="currYear">
+          <script>document.getElementById('currYear').innerHTML=
+          new Date().getFullYear();
+          </script>
+          </span><br/>
+          Designed by <a href="#" target="_blank">OV's Studios</a>
+        </footer>
+    </div>
+    <!-- Link to the JavaScript to load the video for divices with a screen width 
+   of 800 px and above -->
+   <script src="../js/video_background.js"></script>
+  </body>
+</html>

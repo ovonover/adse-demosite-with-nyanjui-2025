@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document thtat will be used for devices with a maximum screen width of 480px*/
+
+body{background-color: #c1f2cf;}
+
+/* Style the container div using an id selector */
+#container {width: 90%;}
+
+/* Hide the video background. */
+#video_bkgd{ display: none; }
+
+/* Style the images in our site. */
+.image-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-container figure {
+    flex-basis: calc(50% - 20px);
+}

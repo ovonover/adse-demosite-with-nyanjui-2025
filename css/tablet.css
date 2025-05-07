@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document that will be used for devices with a maximum screen width of 481px. */
+
+body{
+    background-color: #c1f2cf;
+    background-image: url(../images/pastels-7115023_1920.png);
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Style the container div using an id selector */
+#container {
+    width: 90%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+

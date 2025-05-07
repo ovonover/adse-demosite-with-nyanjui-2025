@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document that will be used for devices with a minimum screen of 800px. */
+
+/* Add a background video */
+#video_bkgd
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10000;
+    overflow: hidden;
+    object-fit: cover;
+}
+
