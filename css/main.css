@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document containing side-wide rules to be applied across all devices on browsers. */
 
+/* Import the fonts stylesheet to allow us use webfonts in our site */
+@import url('fonts.css');
+
 /*Import the mobiles stylesheet for use on device with a maximum screen width of 480px. */
 @import url('mobile.css') screen and (max-width:480px);
 
@@ -19,7 +22,7 @@ body{
     padding-top: 70px;
     text-align: justify;
     font-size: 17px;
-    /* TODO: ADd the font-type for the page text. */
+    /* TODO: Add the font-type for the page text. */
 
 
 
@@ -45,7 +48,7 @@ body{
     font-weight: 800;
     font-size: 2.2em;
     text-align: center;
-    /* TODO: ADd the font-type for the page text. */
+    /* TODO: Add the font-type for the page text. */
 
 
 }
@@ -69,8 +72,8 @@ body{
     color: #ff9900;
     margin-top: 2px;
     margin-bottom: 2px;
-    /* TODO: ADd the font-type for the page text. */
-
+    /* TODO: Add the font-type for the page text. */
+    
 
 }
 

@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <header>
+        <!-- TODO: Add the site's navigation bar here -->
+         <a class="logo" href="../index.html">ADSE2409</a>
+         <nav class="navbar menu">
+          <!-- Hamburger menu for devices with a screen width less than 800 px -->
+           <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" style="margin-left: auto;">
+            <span></span>
+            <span></span>
+            <span></span>
+           </button>
+          <ul id="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="text-formatting.html">Text Formating</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li>
+              <a href="#" aria-haspopup="true" aria-expanded="false" class="has-submenu">CSS</a>
+              <ul>
+                <li><a href="css/animations.html">Animations</a></li>
+                <li><a href="css/transformations.html">Transformations</a></li>
+                <li><a href="css/transitions.html">Transitions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
     <!-- Add a video element to hold our background video -->
     <video id="video_bkgd"></video>
     
