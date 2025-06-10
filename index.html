@@ -35,14 +35,42 @@
           </ul>
         </nav>
     </header>
-    <div id="container"></div>
-    <h1 id="page=heading">Welcome to the ADSE2409 Demosite</h1>
 
-    <footer class="page-footer">
-        <p>ADSE2409 Copyright &copy; 2024 - Current <span id="currYear">
-            <script>document.getElementById('currYear').innerHTML = new Date().getFullYear();
-            </script>
-        </span><br/>Designed by <a href="#">OV's Studios</a></p>
-    </footer>
+    <!-- Add a video element to hold our background video -->
+    <video id="video_bkgd"></video> 
+
+
+    <div id="container">
+      <h1>Follow Us on Social Media</h1>
+          <div class="social-icons mt-4">
+              <a href="https://www.youtube.com/@onezvisuals" title="View our YouTube Channel" class="icon-link" target="_blank">
+                  <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://github.com/ovonover" title="View our GitHub" class="icon-link" target="_blank">
+                  <i class="bi bi-github"></i>
+              </a>
+              <a href="https://x.com/onezvisuals" title="View our Twitter-X" class="icon-link" target="_blank">
+                  <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="https://www.instagram.com/ovonover/" title="View our Instagram" class="icon-link" target="_blank">
+                  <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/onezvisuals" title="View our FaceBook" class="icon-link" target="_blank">
+                  <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.behance.net/onezvisual" title="View our Behance" class="icon-link" target="_blank">
+                  <i class="bi bi-behance"></i>
+              </a>
+          </div>
+      <h1 id="page=heading">Welcome to the ADSE2409 Demosite</h1>
+
+      <footer class="page-footer">
+          <p>ADSE2409 Copyright &copy; 2024 - Current <span id="currYear">
+              <script>document.getElementById('currYear').innerHTML = new Date().getFullYear();
+              </script>
+          </span><br/>Designed by <a href="#">OV's Studios</a></p>
+      </footer>
+      <script src="/js/video_background.js"></script>
+    </div>
 </body>
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2409 Demosite -</title>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <header>
+        <!-- TODO: Add the site's navigation bar here -->
+         <a class="logo" href="../index.html">ADSE2409</a>
+         <nav class="navbar menu">
+          <!-- Hamburger menu for devices with a screen width less than 800 px -->
+           <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" style="margin-left: auto;">
+            <span></span>
+            <span></span>
+            <span></span>
+           </button>
+          <ul id="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="text-formatting.html">Text Formating</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li>
+              <a href="#" aria-haspopup="true" aria-expanded="false" class="has-submenu">CSS</a>
+              <ul>
+                <li><a href="css/animations.html">Animations</a></li>
+                <li><a href="css/transformations.html">Transformations</a></li>
+                <li><a href="css/transitions.html">Transitions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+
+    <!-- Add a video element to hold our background video -->
+    <video id="video_bkgd"></video>
+
+
+    <div id="container">
+      <h1>Follow Us on Social Media</h1>
+        <div class="social-icons mt-4">
+            <a href="https://www.youtube.com/@onezvisuals" title="View our YouTube Channel" class="icon-link" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://github.com/ovonover" title="View our GitHub" class="icon-link" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://x.com/onezvisuals" title="View our Twitter-X" class="icon-link" target="_blank">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.instagram.com/ovonover/" title="View our Instagram" class="icon-link" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/onezvisuals" title="View our FaceBook" class="icon-link" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.behance.net/onezvisual" title="View our Behance" class="icon-link" target="_blank">
+                <i class="bi bi-behance"></i>
+            </a>
+        </div>
+        <h1 class="page-heading">HTML Forms</h1>
+        <p>An HTML Form is an interactive tool used in your webpage that is made up of various controls used to collect/obtain data from website's visitor/user. The information is validated, then sent to the server for further processing and/or storage. Examples of commonly used forms are registration/sign-up forms and login/sign-in forms.</p>
+        <p>An example of a registration/sign-up form is given below. The form will be used to collect the details of a propective employee.</p>
+
+        <form name="frmRegister" id="frmRegister" method="post" title="Please enter your details." accept-charset="UTF-8">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <p>
+                    <label for="txtFirstname">First Name *:</label><br/>
+                    <input type="text" autofocus required form="frmRegister" id="txtFirstname" name="txtFirstname" tabindex="10" placeholder="First Name" title="Please enter your First Name.">
+                </p>
+                <p>
+                    <label for="txtLastname">Last Name *:</label><br/>
+                    <input type="text" autofocus required form="frmRegister" id="txtLastname" name="txtLastname" tabindex="20" placeholder="Last Name" title="Please enter your Last Name.">
+                </p>
+                <p>
+                    <label for="dtpBirthdate">Birth Date *:</label><br/>
+                    <input type="text" autofocus required form="frmRegister" id="dtpBirthdate" name="dtpBirthdate" tabindex="30" placeholder="Birth Date" title="Please enter your Birth Date.">
+                </p>
+                <p>
+                    <label>Gender *:</label><br/>
+                    <input type="radio" id="rdoMale" name="gender" form="frmRegister" tabindex="40" required title="Male Gender" value="Male">
+                    <label for="rdoMale">Male</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="rdoFemale" name="gender" form="frmRegister" tabindex="50" required title="Female Gender" value="Female">
+                    <label for="rdoFemale">Female</label>
+                </p>
+                <p>
+                    <label for="txtMaritalStatus">Martial Status :</label><br/>
+                    <input type="text" form="frmRegister" id="txtMaritalStatus" name="txtBirthdate" tabindex="60" placeholder="Marital Status" title="Please enter your Marital Status." list="dtlMaritalStatus">
+                    <datalist id="dtlMaritalStatus">
+                        <option value="Single">Single</option>
+                        <option value="Engaged">Engaged</option>
+                        <option value="Married">Married</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Complicated">Complicated</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <p>
+                    <label for="txtPhone">Phone no. *:</label><br/>
+                    <input name="txtPhone" type="tel" required id="txtPhone" form="frmRegister" placeholder="Phone Number" tabindex="100" title="Please enter your phone number">
+                </p>
+                <p>
+                    <label for="txtEmail">Email:</label><br/>
+                    <input name="txtEmail" type="email" required id="txtEmail" form="frmRegister" placeholder="Email Address" tabindex="110" title="Please enter your email address">
+                </p>
+                <p>
+                    <label for="txtPostal">Postal Address:</label><br/>
+                    <input name="txtPostal" type="number" required id="txtPostal" form="frmRegister" placeholder="Postal Address" tabindex="120" title="Please enter your postal address">
+                </p>
+                <p>
+                    <label for="txtField">Town/City:</label><br/>
+                    <input name="txtField" type="number" required id="txtField" form="frmRegister" placeholder="Town/City" tabindex="130" title="Please enter your town/city of your mailing address">
+                </p>
+                <p>
+                    <label for="sltCountry">Country:</label><br/>
+                    <select name="sltCountry" id="sltCountry" form="frmRegister" tabindex="140" title="Please select your mailing country">
+                        <option value="Kenya" selected>Kenya</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Sounthern Sudan">Sounthern Sudan</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Somalia">Somalia</option>
+                    </select>
+                    <input name="txt" type="number" required id="txtField" form="frmRegister" placeholder="Town/City" tabindex="130" title="Please enter your town/city of your mailing address">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Other Details</legend>
+                <p>
+                    <label for="">Hobbies</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="140" value="Drawing" name="chkDrawing">Drawing</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="150" value="Programming" name="chkProgramming">Programming</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="160" value="Reading" name="chkReading">Reading</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="170" value="Writing" name="chkWriting">Writing</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="180" value="Chess" name="chkChess">Chess</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="190" value="Photography" name="chkPhotography"></label>Photography<br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="200" value="Movies" name="chkMovies">Watching Movies</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="210" value="HorseRiding" name="chkHorseRiding">Horse Riding</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="220" value="Football" name="chkFootball">Football</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="230" value="Walking" name="chkWalking">Walking</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="240" value="BasketBall" name="chkBasketBall">BasketBall</label><br/>
+                    <label><input type="checkbox" form="frmRegister" tabindex="250" value="Cooking" name="chkCooking">Cooking</label><br/>
+                </p>
+                <p>
+                    <label for="txtSummery">Briefly Describe Yourself</label><br/>
+                    <textarea name="txtSummery" id="txtSummery" form="frmRegister" placeholder="Professional Summery" tabindex="260" title="Please describe your professional summery"></textarea>
+                </p>
+                <p>
+                    <label for="fileField">Upload CV &amp; Certificat + <br> Max size (5MB) formats allowed (pdf, doc, docx, odf &amp; txt)</label><br/>
+                    <input type="file" name="fileField" id="fileField"/>
+                </p>
+                <p>
+                    <input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="" id="" value="Reset"/><br/>
+                </p>
+            </fieldset>
+        </form>
+
+        <!-- Add links to our social media handles using div -->
+        <footer class="page-footer">
+            <p>ADSE2409 Copyright &copy; 2024 - Current <span id="currYear">
+                <script>document.getElementById('currYear').innerHTML = new Date().getFullYear();
+                </script>
+            </span><br/><a href="#">Designed by OV's Studios</a></p>
+        </footer>
+        <script src="../../js/video_background.js"></script>
+    </div>
+</body>
+</html>

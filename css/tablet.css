@@ -16,3 +16,15 @@ body{
     padding-right: 2%;
 }
 
+/* ----------------------------------------------------------------------------------------- */
+
+form textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+form select{
+    width: 100%;
+}

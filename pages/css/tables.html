@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2409 Demosite - Text Formatting</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>ADSE2409 Demosite -</title>
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
     <header>
@@ -34,9 +34,12 @@
           </ul>
         </nav>
     </header>
+
+
     <!-- Add a video element to hold our background video -->
     <video id="video_bkgd"></video>
-    
+
+
     <div id="container">
         <h1>Follow Us on Social Media</h1>
         <div class="social-icons mt-4">
@@ -59,61 +62,92 @@
                 <i class="bi bi-behance"></i>
             </a>
         </div>
-        <h1>Text Formatting</h1>
-        <p>This page demonstrates how to format text using HTML Formatting tags !</p>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6><br/>
-        <h2>Updating, Emphasizing, and Shifting Text</h2>
-        <p>This text is <b>displayed in bold.</b></p><br/>
-        <p>This text is <i>displayed in italic.</i></p><br/>
-        <p>This text is <u>underlined.</u></p><br/>
-        <p>This text is <small>displayed smaller.</small></p>
-        <p>This is an example of <del>deleted</del> <ins>inserted text.</ins></p><br/>
-        <p>The is an example of <strong>Strong text.</strong></p><br/>
-        <p>The is an example of <sub>subscript text.</sub></p><br/>
-        <p>The is an example of <sup>superscript text.</sup></p><br/>
+        <h1 class="page-heading">HTML Tables</h1>
+        <p>A table is a grid of rows and columns. Rows span from left to the right, while the columns span form the top to the bottom. an intersection between a row and a column is called a cell. Examples of tables are given below.</p>
+        <caption>
+            ADSE 2501 Students
+        </caption>
+        <table border="1" class="data-table" summary="Table displaying the details of the ADSE2501 intake.">
+            <tbody>
+                <tr>
+                    <th>Student No.</th>
+                    <th>Names</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td>S001</td>
+                    <td>Ali Ahmed</td>
+                    <td>Eastleigh</td>
+                </tr>
+                <tr>
+                    <td>S002</td>
+                    <td>Ayan Ahmed</td>
+                    <td>South C.</td>
+                </tr>
+                <tr>
+                    <td>S003</td>
+                    <td>Dennis Simiyu</td>
+                    <td>Embakassi</td>
+                </tr>
+                <tr>
+                    <td>S004</td>
+                    <td>Fardowsa Issak</td>
+                    <td>South B.</td>
+                </tr>
+                <tr>
+                    <td>S005</td>
+                    <td>Victor Koech</td>
+                    <td>Chiromo</td>
+                </tr>
+                <tr>
+                    <td>S006</td>
+                    <td>Lavender Achieng</td>
+                    <td>Utawala</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>The table below illustrates how to merge both rows and columns.</p>
+        <table border="1" class="data-table">
+            <caption>Preferred Holiday Destinations by Various Age Groups.</caption>
+            <tr>
+                <th colspan="2" rowspan="2">Results</th>
+                <th colspan="3">Age Range</th>
+            </tr>
+            <tr>
+                <th>18 - 20</th>
+                <th>21 - 50</th>
+                <th>Over 50</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Favourite Holiday Destination</th>
+                <td>Dubai</td>
+                <td>25%</td>
+                <td>50%</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>Bangkok</td>
+                <td>40%</td>
+                <td>30%</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Switzerland</td>
+                <td>30%</td>
+                <td>20%</td>
+                <td>50%</td>
+            </tr>
+        </table>
+
         
-        <p>Do not forget to <mark>buy milk today.</mark><br/></p>
-        <h3>Using superscripts and subscripts</h3>
-        
-        
-        <p>
-            The area of a circle is given by:
-            A = &pi;r<sup>2</sup>
-        </p>
-        
-        <p>The chemical equation of mixing Ferric Oxide & Carbon is given below.</p>
-        <p>2Fe<sub>2</sub>O<sub>(s)</sub> + 3C<sub>(s)</sub> = 4Fe<sub>(s)</sub> + 3CO<sub>2(g)</sub></p>
-        <h3>A Simple C Program</h3>
-        
-        <code>
-            //First C program to display "Hello World!" <br/>
-            #include &lt;stdio.h&gt; <br/>
-            //main function begins program execution<br/>
-            void main()<br/>
-            {<br/>
-                <blockquote>
-                printf("Hello World!");<br/>
-                </blockquote>
-            }<br/>
-        </code>
-        <p>The program outputs/displays...</p>
-        <samp>Hello World!</samp><br/>
-        
-        <p>
-            The font styles properties allow you to specify the font for the text. They allow you to change the different font attributes of the text such as font, size, and style of the text.<br/>The browser must support the font specified by the font properties.<br/>Otherwise, it will display the default font, which is dependent on the browser.
-        </p>
-        <footer>
+        <footer class="page-footer">
             <p>ADSE2409 Copyright &copy; 2024 - Current <span id="currYear">
                 <script>document.getElementById('currYear').innerHTML = new Date().getFullYear();
                 </script>
             </span><br/><a href="#">Designed by OV's Studios</a></p>
         </footer>
     </div>
-    <script src="../js/video_background.js"></script>
+    <script src="../../js/video_background.js"></script>
 </body>
 </html>

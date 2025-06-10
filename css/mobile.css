@@ -20,3 +20,16 @@ body{background-color: #c1f2cf;}
 .image-container figure {
     flex-basis: calc(50% - 20px);
 }
+
+/* ------------------------------------------------------------------------------- */
+form textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+form select
+{
+    width: 100%; 
+}
